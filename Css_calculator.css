@@ -1,0 +1,92 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 1, 2019, 1:12:57 PM
+    Author     : MasterVrishabh
+*/
+/* this is the outer body of the calculator */
+body{
+	font-family: 'Open Sans',sans-serif;
+        background: #00C9FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	
+}
+.main{
+    border: 0.1px hidden;
+    width: 400px;
+    height: 610px;
+    margin: 20px auto;
+     background-color: #eaedef;
+   box-shadow: 0 4px 5px;
+   border-radius: 10px;
+   
+}
+
+
+/* This is the display screen of the calculator*/
+.output-div{
+    border: 1px hidden;
+    width: 350px;
+    height: 150px;
+    margin:20px auto;
+    background-color: #eaedef;
+}
+#history-value{
+    text-align: right;
+    padding: 15px;
+    margin: 0 auto;
+    font-size: 15px;
+    height: 20px;
+    color: gray;
+}
+#output{
+     text-align: right;
+    padding: 0px;
+    margin: 10px 20px;
+    font-size: 30px;
+    height: 60px;
+    
+}
+
+/* This is the input section of the calcuator which comprises of all the buttons*/
+
+
+.input-div{
+    border: 1px hidden;
+    width: 350px;
+    height: 400px;
+    margin:30px auto;
+     background-color: #eaedef;
+}
+.number, .operator, .empty {
+    border: 1px hidden;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: 15px;
+    font-weight: bold;
+    
+}
+.number, .empty{
+    background-color: #eaedef;
+}
+.operator{
+    background-color: lightblue;
+}
+.number, .operator{
+    cursor: pointer;
+}
+.operator:active, .number:active{
+    font-size: 13px;
+}
+
+.operator:focus , .number:focus, .empty:focus {
+    outline: 0;
+}
+
